@@ -61,24 +61,9 @@ EditorGUILayout.BeginVertical("Box");
             EditorGUILayout.Space();
             if (myScript.freeMouseMovement)
             {
-				myScript.useJoystickFreeMovementOnly = EditorGUILayout.Toggle(new GUIContent("Toggle joystick only free look", "Allows to freely view around the drone with your joystick and not depending on drone look rotation."), myScript.useJoystickFreeMovementOnly);
-
-				EditorGUILayout.BeginVertical("Box");
-				if(myScript.useJoystickFreeMovementOnly == false)
-				{
-					myScript.mouseSensitvity = EditorGUILayout.FloatField(new GUIContent("Mouse Sensitivity", "Value that will determine how fast your free look mouse will behave."), myScript.mouseSensitvity);
-					myScript.mouseFollowTime = EditorGUILayout.FloatField(new GUIContent("Mouse Follow Time", "Value that will follow the camera view behind the mouse movement.(The lower the value, the faster it will follow mouse movement)"), myScript.mouseFollowTime);
-					EditorGUILayout.Space();
-					EditorGUILayout.Space();
-					EditorGUILayout.HelpBox("Mouse Input", MessageType.Info);
-					myScript.mouse_X_axisName = EditorGUILayout.TextField(new GUIContent("Mouse X axis name", "Name of the mouse X axis that is connected to mouse movement."), myScript.mouse_X_axisName);
-					myScript.mouse_Y_axisName = EditorGUILayout.TextField(new GUIContent("Mouse Y axis name", "Name of the mouse Y axis that is connected to mouse movement."), myScript.mouse_Y_axisName);
-				}
-				EditorGUILayout.HelpBox("Joystick Input", MessageType.Info);
-				myScript.dPad_X_axisName = EditorGUILayout.TextField(new GUIContent("Joystick axis for the X axis", "Name of the joystick input, the arrow axis used for this one."), myScript.dPad_X_axisName);
-				myScript.dPad_Y_axisName = EditorGUILayout.TextField(new GUIContent("Joystick axis for the Y axis", "Name of the joystick input, the arrow axis used for this one."), myScript.dPad_Y_axisName);
-				EditorGUILayout.EndVertical();
-               }
+                myScript.mouseSensitvity = EditorGUILayout.FloatField(new GUIContent("Mouse Sensitivity", "Value that will determine how fast your free look mouse will behave."), myScript.mouseSensitvity);
+                myScript.mouseFollowTime = EditorGUILayout.FloatField(new GUIContent("Mouse Follow Time", "Value that will follow the camera view behind the mouse movement.(The lower the value, the faster it will follow mouse movement)"), myScript.mouseFollowTime);
+            }
         }
 
         if (GUI.changed)

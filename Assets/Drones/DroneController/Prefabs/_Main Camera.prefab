@@ -3,15 +3,18 @@
 --- !u!1 &184068
 GameObject:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
   m_Component:
   - component: {fileID: 420066}
   - component: {fileID: 2054112}
   - component: {fileID: 12470400}
   - component: {fileID: 8198640}
-  - component: {fileID: 114459675063298188}
+  - component: {fileID: 114973714746527528}
+  - component: {fileID: 114818414570070376}
+  - component: {fileID: 401703039269764613}
   m_Layer: 0
   m_Name: _Main Camera
   m_TagString: MainCamera
@@ -21,27 +24,44 @@ GameObject:
   m_IsActive: 1
 --- !u!4 &420066
 Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 184068}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.1258116, y: 0, z: 0, w: 0.9920542}
+  m_LocalPosition: {x: 0, y: 18, z: -42.86}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -180.00002, z: 0}
 --- !u!20 &2054112
 Camera:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 184068}
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0.019607844}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_Iso: 200
+  m_ShutterSpeed: 0.005
+  m_Aperture: 16
+  m_FocusDistance: 10
+  m_FocalLength: 50
+  m_BladeCount: 5
+  m_Curvature: {x: 2, y: 11}
+  m_BarrelClipping: 0.25
+  m_Anamorphism: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -68,51 +88,44 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!81 &8198640
-AudioListener:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 184068}
-  m_Enabled: 1
 --- !u!124 &12470400
 Behaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 184068}
   m_Enabled: 1
---- !u!1001 &100100000
-Prefab:
-  m_ObjectHideFlags: 1
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications: []
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 184068}
-  m_IsPrefabParent: 1
---- !u!114 &114459675063298188
+--- !u!81 &8198640
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 184068}
+  m_Enabled: 1
+--- !u!114 &114973714746527528
 MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 184068}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -1909127222, guid: 3e3b5b40cad6ad748a6a784e93eb3bc4, type: 3}
+  m_Script: {fileID: 11500000, guid: 6cc32a83464049649a2853e102907d12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputEditorFPS: 1
-  FPS: 1
+  inputEditorFPS: 0
+  FPS: 0
   fpsViewMask:
     serializedVersion: 2
     m_Bits: 4294967279
-  positionInsideDrone: {x: 0, y: 0, z: 0}
-  rotationInsideDrone: {x: 0, y: 0, z: 0}
+  positionInsideDrone: {x: 0, y: -0.05, z: -0.27}
+  rotationInsideDrone: {x: -15, y: 0, z: 0}
   fpsFieldOfView: 90
-  dronesToControl: []
+  dronesToControl:
+  - {fileID: 0}
   pickedMyDrone: 0
   ourDrone: {fileID: 0}
   positionBehindDrone: {x: 0, y: 2, z: -4}
@@ -123,13 +136,72 @@ MonoBehaviour:
     m_Bits: 4294967295
   tpsFieldOfView: 60
   freeMouseMovement: 0
-  useJoystickFreeMovementOnly: 0
-  mouse_X_axisName: Mouse X
-  mouse_Y_axisName: Mouse Y
-  dPad_X_axisName: dPad_X
-  dPad_Y_axisName: dPad_Y
   mouseSensitvity: 100
   mouseFollowTime: 0.2
-  canvasSelectButtons: []
-  canvasExitButtons: []
+  canvasSelectButtons:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  canvasExitButtons:
+  - {fileID: 0}
   canvasTimeTrack: {fileID: 0}
+--- !u!114 &114818414570070376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 184068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b492e2f2fb3ed14c9f6b50555287ecc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: EDITOR SCRIPT. THIS SCRIPT IS USED TO DETERMINE HOW MANY DRONES ARE
+    THERE ON THE SCENE, AND IF THERE IS MORE THAN 1 DRONE IT WILL ACTIVATE THE 'PICK
+    MENU' AUTOMATICALLY.
+  cs: {fileID: 114973714746527528}
+--- !u!114 &401703039269764613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 184068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
+  m_TaaSettings:
+    m_Quality: 3
+    m_FrameInfluence: 0.1
+    m_JitterScale: 1
+    m_MipBias: 0
+    m_VarianceClampScale: 0.9
+    m_ContrastAdaptiveSharpening: 0
