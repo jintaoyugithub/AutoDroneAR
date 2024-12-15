@@ -1,0 +1,81 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &9221354559778489266
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 744645843753722975}
+  - component: {fileID: 2377912090513671923}
+  m_Layer: 0
+  m_Name: GameController1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &744645843753722975
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9221354559778489266}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.3408687, y: 3.3602347, z: -0.5739023}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2377912090513671923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9221354559778489266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4726f2c59a01b9e42b7c270c2048ae85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  routeWidth: 20
+  routeHeigh: 20
+  WallLength: 100
+  WallHeight: 50
+  TimePassed: 60
+  DroneBlood: 5
+  generateTimeDuration: 5
+  generateDistance: 50
+  crossWidthMin: 2
+  crossWidthMax: 4
+  singleWallMin: 3
+  singleWallMax: 8
+  PointsGot: 0
+  isStartGame: 0
+  Drone: {fileID: 0}
+  WallPrefab: {fileID: 1984226425855416361, guid: a258ca9dd95e42e419a29086f6b2f429,
+    type: 3}
+  ObstaclePrefab: {fileID: 2030289064470570666, guid: adc40620456e99747a6555ec2b2045c7,
+    type: 3}
+  ObstacleMaterials:
+  - {fileID: 2100000, guid: 70e5eda68ab534a87b26f7e79fba63e6, type: 2}
+  - {fileID: 2100000, guid: d5e84b7f96b644a72b7df2c43c3200f5, type: 2}
+  - {fileID: 2100000, guid: 28ba334487c744c7783e2d715a50da06, type: 2}
+  - {fileID: 2100000, guid: cb4f46638db2cc943a8afe7cd1f31fe6, type: 2}
+  - {fileID: 2100000, guid: 5d7f785ebc7b16a489f15f865f6bbc13, type: 2}
+  HeartsUI:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  PointsGotUI: {fileID: 0}
+  FinishGameUI: {fileID: 0}
+  Shield: {fileID: 1977203340976831440, guid: ea7445ffb944058449ca8839d021f6a6, type: 3}
+  ShieldGold: {fileID: 0}
