@@ -1363,7 +1363,7 @@ PrefabInstance:
     - target: {fileID: 114540581237818226, guid: b05b3b0e1cf36422985949dad64e2d7b,
         type: 3}
       propertyPath: forceDownHover
-      value: 110
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 114540581237818226, guid: b05b3b0e1cf36422985949dad64e2d7b,
         type: 3}
@@ -1422,13 +1422,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114540581237818226, guid: b05b3b0e1cf36422985949dad64e2d7b,
         type: 3}
-      propertyPath: right_analog_x_movement
+      propertyPath: left_analog_x_movement
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 114540581237818226, guid: b05b3b0e1cf36422985949dad64e2d7b,
         type: 3}
-      propertyPath: right_analog_y_movement
+      propertyPath: left_analog_y_movement
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114540581237818226, guid: b05b3b0e1cf36422985949dad64e2d7b,
+        type: 3}
+      propertyPath: right_analog_x_movement
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114540581237818226, guid: b05b3b0e1cf36422985949dad64e2d7b,
+        type: 3}
+      propertyPath: right_analog_y_movement
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114540581237818226, guid: b05b3b0e1cf36422985949dad64e2d7b,
         type: 3}
@@ -1443,7 +1453,7 @@ PrefabInstance:
     - target: {fileID: 114540581237818226, guid: b05b3b0e1cf36422985949dad64e2d7b,
         type: 3}
       propertyPath: profiles.Array.data[1].forceDownHover
-      value: 110
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 114540581237818226, guid: b05b3b0e1cf36422985949dad64e2d7b,
         type: 3}
