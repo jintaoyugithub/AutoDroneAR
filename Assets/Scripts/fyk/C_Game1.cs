@@ -66,6 +66,10 @@ public class C_Game1 : MonoBehaviour
 
     private GameObject WallsParent;
 
+    public GameObject StartGame1;
+    public GameObject StartGame2;
+
+    private Vector3 startDronePosition;
     private void Awake()
     {
         if (Instance == null)
@@ -80,6 +84,10 @@ public class C_Game1 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if (Drone != null)
+        {
+            startDronePosition = Drone.transform.position;
+        }
         //WallsParent = new GameObject("Obstacle's parent");
         //WallsParent.transform.position = Vector3.zero;
     }
@@ -227,6 +235,9 @@ public class C_Game1 : MonoBehaviour
             HeartsUI[i].gameObject.SetActive(true);
             HeartsUI[i].transform.localScale = Vector3.one;
         }
+        StartGame1.SetActive(false);
+        StartGame2.SetActive(false);
+
         HeartIndex = 4;
         WallsParent = new GameObject("Obstacle's parent");
         WallsParent.transform.position = Vector3.zero;
@@ -421,6 +432,9 @@ public class C_Game1 : MonoBehaviour
         {
             HeartsUI[i].gameObject.SetActive(false);
         }
+        StartGame1.SetActive(true);
+        StartGame2.SetActive(true);
+
         PointsGotUI.GetComponent<TextMeshProUGUI>().text = "";
         FinishGameUI.GetComponent<TextMeshProUGUI>().text = "Points Got Last Time: " + Mathf.Round(PointsGot);
     }
@@ -449,5 +463,10 @@ public class C_Game1 : MonoBehaviour
             yield return null;
         }
         this.transform.localScale = Vector3.one;
+    }
+
+    public void resetDronePosition()
+    {
+        Drone.transform.position = startDronePosition + Drone.transform.forward * 1.0f;
     }
 }

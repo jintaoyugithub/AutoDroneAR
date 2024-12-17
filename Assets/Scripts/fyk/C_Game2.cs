@@ -26,8 +26,8 @@ public class C_Game2 : MonoBehaviour
     public bool isStartGame = false;
     private int DroneBlood = 5;
 
-    public float generateRadiusMin = 10.0f;
-    public float generateRadiusMax = 15.0f;
+    public float generateRadiusMin = 2.0f;
+    public float generateRadiusMax = 4.0f;
 
     public Image[] HeartsUI;
     private int HeartIndex = 4;
@@ -50,12 +50,15 @@ public class C_Game2 : MonoBehaviour
     public GameObject ImprovementItem;
 
 
-    public float ItemGenerateRadiusMin = 5.0f;
-    public float ItemGenerateRadiusMax = 10.0f;
+    public float ItemGenerateRadiusMin = 1.0f;
+    public float ItemGenerateRadiusMax = 3.0f;
     public float ItemGenerateDuration = 10.0f;
 
     private float ItemGenerateTimer = 10.0f;
     private GameObject ItemParent;
+
+    public GameObject StartGame1;
+    public GameObject StartGame2;
 
     private void Awake()
     {
@@ -185,6 +188,8 @@ public class C_Game2 : MonoBehaviour
             HeartsUI[i].gameObject.SetActive(true);
             HeartsUI[i].transform.localScale = Vector3.one;
         }
+        StartGame1.SetActive(false);
+        StartGame2.SetActive(false);
         isStartGame = true;
     }
 
@@ -272,6 +277,10 @@ public class C_Game2 : MonoBehaviour
         //}
         Destroy(EnemyParent);
         Destroy(ItemParent);
+
+        StartGame1.SetActive(true);
+        StartGame2.SetActive(true);
+
         isStartGame = false;
         PointsGotUI.GetComponent<TextMeshProUGUI>().text = "";
         FinishGameUI.GetComponent<TextMeshProUGUI>().text = "Points Got Last Time: " + Mathf.Round(PointsGot);
