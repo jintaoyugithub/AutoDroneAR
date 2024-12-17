@@ -45,7 +45,7 @@ public class C_Game1 : MonoBehaviour
     [HideInInspector]
     public bool isStartGame = false;
 
-    [Header("ÎÞÈË»úGameObject")]
+    [Header("ï¿½ï¿½ï¿½Ë»ï¿½GameObject")]
     public GameObject Drone;
 
     [Header("Wall")]
@@ -257,7 +257,7 @@ public class C_Game1 : MonoBehaviour
         Vector3 generatePosition = Random.Range(-routeWidth / 2 + Width / 2, routeWidth / 2 - Width / 2) * startRightDirection + startGamePosition + generateDistance * startForwardDirection;
 
         GameObject HorObstacle = Instantiate(ObstaclePrefab, generatePosition, Quaternion.identity);
-        HorObstacle.transform.localScale = new Vector3(1, WallHeight, Width);
+        HorObstacle.transform.localScale = new Vector3(0.2f, WallHeight, Width);
         HorObstacle.transform.rotation = Quaternion.LookRotation(startRightDirection);
         HorObstacle.GetComponent<C_Obstacle>().MoveDirection = -startForwardDirection;
         HorObstacle.transform.SetParent(WallsParent.transform);
@@ -271,7 +271,7 @@ public class C_Game1 : MonoBehaviour
         Vector3 generatePosition = Random.Range(-routeHeigh / 2 + Width / 2, routeHeigh / 2 + Width / 2) * startUpDirection + startGamePosition + generateDistance * startForwardDirection;
 
         GameObject VerObstacle = Instantiate(ObstaclePrefab, generatePosition, Quaternion.identity);
-        VerObstacle.transform.localScale = new Vector3(1, Width, routeWidth);
+        VerObstacle.transform.localScale = new Vector3(0.2f, Width, routeWidth);
         VerObstacle.transform.rotation = Quaternion.LookRotation(startRightDirection);
         VerObstacle.GetComponent<C_Obstacle>().MoveDirection = -startForwardDirection;
         VerObstacle.transform.SetParent(WallsParent.transform);
@@ -316,12 +316,12 @@ public class C_Game1 : MonoBehaviour
         GameObject VerObstacle1 = Instantiate(ObstaclePrefab, generatePosition1, Quaternion.identity);
         GameObject VerObstacle2 = Instantiate(ObstaclePrefab, generatePosition2, Quaternion.identity);
 
-        VerObstacle1.transform.localScale = new Vector3(1, Width1, routeWidth);
+        VerObstacle1.transform.localScale = new Vector3(0.2f, Width1, routeWidth);
         VerObstacle1.transform.rotation = Quaternion.LookRotation(startRightDirection);
         VerObstacle1.GetComponent<C_Obstacle>().MoveDirection = -startForwardDirection;
         VerObstacle1.transform.SetParent(WallsParent.transform);
 
-        VerObstacle2.transform.localScale = new Vector3(1, Width2, routeWidth);
+        VerObstacle2.transform.localScale = new Vector3(0.2f, Width2, routeWidth);
         VerObstacle2.transform.rotation = Quaternion.LookRotation(startRightDirection);
         VerObstacle2.GetComponent<C_Obstacle>().MoveDirection = -startForwardDirection;
         VerObstacle2.transform.SetParent(WallsParent.transform);
@@ -344,13 +344,13 @@ public class C_Game1 : MonoBehaviour
 
 
         GameObject leftObstacle = Instantiate(ObstaclePrefab, leftWallPosition, Quaternion.identity);
-        leftObstacle.transform.localScale = new Vector3(1, WallHeight, leftWallLength);
+        leftObstacle.transform.localScale = new Vector3(0.2f, WallHeight, leftWallLength);
         leftObstacle.transform.rotation = Quaternion.LookRotation(startRightDirection);
         leftObstacle.GetComponent<C_Obstacle>().MoveDirection = -startForwardDirection;
         leftObstacle.transform.SetParent(WallsParent.transform);
 
         GameObject RightObstacle = Instantiate(ObstaclePrefab, rightWallPosition, Quaternion.identity);
-        RightObstacle.transform.localScale = new Vector3(1, WallHeight, rightWallLength);
+        RightObstacle.transform.localScale = new Vector3(0.2f, WallHeight, rightWallLength);
         RightObstacle.transform.rotation = Quaternion.LookRotation(startRightDirection);
         RightObstacle.GetComponent<C_Obstacle>().MoveDirection = -startForwardDirection;
         RightObstacle.transform.SetParent(WallsParent.transform);
@@ -373,13 +373,13 @@ public class C_Game1 : MonoBehaviour
 
 
         GameObject upObstacle = Instantiate(ObstaclePrefab, upWallPosition, Quaternion.identity);
-        upObstacle.transform.localScale = new Vector3(1, upWallLength, routeWidth);
+        upObstacle.transform.localScale = new Vector3(0.2f, upWallLength, routeWidth);
         upObstacle.transform.rotation = Quaternion.LookRotation(startRightDirection);
         upObstacle.GetComponent<C_Obstacle>().MoveDirection = -startForwardDirection;
         upObstacle.transform.SetParent(WallsParent.transform);
 
         GameObject downObstacle = Instantiate(ObstaclePrefab, downWallPosition, Quaternion.identity);
-        downObstacle.transform.localScale = new Vector3(1, downWallLength, routeWidth);
+        downObstacle.transform.localScale = new Vector3(0.2f, downWallLength, routeWidth);
         downObstacle.transform.rotation = Quaternion.LookRotation(startRightDirection);
         downObstacle.GetComponent<C_Obstacle>().MoveDirection = -startForwardDirection;
         downObstacle.transform.SetParent(WallsParent.transform);
