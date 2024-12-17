@@ -48,12 +48,12 @@ MonoBehaviour:
   routeHeigh: 20
   WallLength: 100
   WallHeight: 50
-  TimePassed: 60
+  TimePassed: 0
   DroneBlood: 5
   generateTimeDuration: 5
   generateDistance: 50
-  crossWidthMin: 2
-  crossWidthMax: 4
+  crossWidthMin: 3
+  crossWidthMax: 5
   singleWallMin: 3
   singleWallMax: 8
   PointsGot: 0

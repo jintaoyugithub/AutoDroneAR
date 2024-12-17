@@ -27,4 +27,13 @@ public class C_Heart : MonoBehaviour
         // Ðý×ªÐ§¹û
         transform.Rotate(Vector3.forward, rotationSpeed * Time.deltaTime);
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            C_Game2.Instance.GetHeart();
+            Destroy(gameObject);
+        }
+    }
 }

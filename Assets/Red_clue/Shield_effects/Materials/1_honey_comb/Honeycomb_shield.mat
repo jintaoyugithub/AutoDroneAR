@@ -55,9 +55,9 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - Vector1_76A5AEC6: 4
-    - Vector1_874A5B13: 0.2
-    - Vector1_99BEBA23: 4
+    - Vector1_76A5AEC6: 0
+    - Vector1_874A5B13: 0
+    - Vector1_99BEBA23: 6
     - _QueueControl: 0
     - _QueueOffset: 0
     m_Colors:

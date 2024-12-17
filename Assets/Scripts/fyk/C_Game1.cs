@@ -27,7 +27,6 @@ public class C_Game1 : MonoBehaviour
     private float generateTimer = 0;
     private float HardLevel = 1;
 
-    [HideInInspector]
     public float TimePassed = 0;
 
     public int DroneBlood = 5;
@@ -81,8 +80,8 @@ public class C_Game1 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        WallsParent = new GameObject("Obstacle's parent");
-        WallsParent.transform.position = Vector3.zero;
+        //WallsParent = new GameObject("Obstacle's parent");
+        //WallsParent.transform.position = Vector3.zero;
     }
 
     // Update is called once per frame
@@ -213,12 +212,24 @@ public class C_Game1 : MonoBehaviour
     public void StartGame()
     {
         isStartGame = true;
+        HardLevel = 1;
+        PointsGot = 0;
+        TimePassed = 0;
 
         startGamePosition = Drone.transform.position;
 
         startForwardDirection = Drone.transform.forward;
         startRightDirection = Drone.transform.right;
         startUpDirection = Drone.transform.up;
+
+        for (int i = 0; i < HeartsUI.Length; i++)
+        {
+            HeartsUI[i].gameObject.SetActive(true);
+            HeartsUI[i].transform.localScale = Vector3.one;
+        }
+        HeartIndex = 4;
+        WallsParent = new GameObject("Obstacle's parent");
+        WallsParent.transform.position = Vector3.zero;
 
         GameObject Wall_R = Instantiate(WallPrefab, startGamePosition + startRightDirection * (routeWidth / 2), Quaternion.identity);
         Wall_R.transform.localScale = new Vector3(0.1f, WallHeight, WallLength);
@@ -401,9 +412,14 @@ public class C_Game1 : MonoBehaviour
     public void GameOver()
     {
         isStartGame = false;
-        for(int i = 0; i < WallsParent.transform.childCount; i++)
+        //for(int i = 0; i < WallsParent.transform.childCount; i++)
+        //{
+        //    Destroy(WallsParent.transform.GetChild(i).gameObject);
+        //}
+        Destroy(WallsParent);
+        for (int i = 0; i < HeartsUI.Length; i++)
         {
-            Destroy(WallsParent.transform.GetChild(i).gameObject);
+            HeartsUI[i].gameObject.SetActive(false);
         }
         PointsGotUI.GetComponent<TextMeshProUGUI>().text = "";
         FinishGameUI.GetComponent<TextMeshProUGUI>().text = "Points Got Last Time: " + Mathf.Round(PointsGot);

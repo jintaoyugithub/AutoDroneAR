@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2332064971071408535
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4299484558120919834}
+  - component: {fileID: 5026847230509056178}
+  m_Layer: 0
+  m_Name: GameController2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4299484558120919834
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2332064971071408535}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.4804211, y: 2.01122, z: 0.17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5026847230509056178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2332064971071408535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf4b02562aa8a0c4091e2865e94ef2ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Drone: {fileID: 0}
+  EnemyDrone1: {fileID: 3502390083938023573, guid: a41eddb5b75439249b6e9281d72dd573,
+    type: 3}
+  EnemyDrone2: {fileID: 5113380117786553560, guid: 3a5b8a3995a92f644b72ad7cd39921fe,
+    type: 3}
+  Enemy1GenerateDuration: 1
+  Enemy2GenerateDuration: 3
+  Enemy2ShootDuration: 3
+  isStartGame: 0
+  generateRadiusMin: 10
+  generateRadiusMax: 15
+  HeartsUI:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  PointsGotUI: {fileID: 0}
+  FinishGameUI: {fileID: 0}
+  generateEnemy1: 1
+  generateEnemy2: 1
+  Shield: {fileID: 6685784269220047615, guid: 264e50328bc00dd4eb5f8498a3447319, type: 3}
+  curDamage: 1
+  ShieldItem: {fileID: 8929799335265231013, guid: e1695f1c187a5cf4b8d6b2dec16f1094,
+    type: 3}
+  HeartItem: {fileID: 5750002579242191605, guid: f5dff06d997bccd4590a99c04d7d4a3e,
+    type: 3}
+  ImprovementItem: {fileID: 6169996005220370602, guid: 25109ce3069427c479af7ae1921f7017,
+    type: 3}
+  ItemGenerateRadiusMin: 5
+  ItemGenerateRadiusMax: 10
+  ItemGenerateDuration: 10
