@@ -57,6 +57,12 @@ public class C_Game2 : MonoBehaviour
     private float ItemGenerateTimer = 10.0f;
     private GameObject ItemParent;
 
+    public GameObject StartButton1;
+    public GameObject StartButton2;
+
+    public GameObject RestButton;
+    public GameObject FinalScoreBK;
+
     private void Awake()
     {
         if (Instance == null)
@@ -84,7 +90,7 @@ public class C_Game2 : MonoBehaviour
                 isStartGame = false;
             }
             PointsGot += Time.deltaTime * HardLevel;
-            PointsGotUI.GetComponent<TextMeshProUGUI>().text = "Points:" + Mathf.Round(PointsGot);
+            PointsGotUI.GetComponent<TextMeshProUGUI>().text = "Score:" + Mathf.Round(PointsGot);
 
             Enemy1Timer -= Time.deltaTime;
             Enemy2Timer -= Time.deltaTime;
@@ -185,6 +191,9 @@ public class C_Game2 : MonoBehaviour
             HeartsUI[i].gameObject.SetActive(true);
             HeartsUI[i].transform.localScale = Vector3.one;
         }
+        StartButton1.SetActive(false);
+        StartButton1.SetActive(false);
+        RestButton.SetActive(true);
         isStartGame = true;
     }
 
@@ -272,9 +281,22 @@ public class C_Game2 : MonoBehaviour
         //}
         Destroy(EnemyParent);
         Destroy(ItemParent);
+
+        StartButton1.SetActive(true);
+        StartButton1.SetActive(true);
+        RestButton.SetActive(false);
+
         isStartGame = false;
         PointsGotUI.GetComponent<TextMeshProUGUI>().text = "";
-        FinishGameUI.GetComponent<TextMeshProUGUI>().text = "Points Got Last Time: " + Mathf.Round(PointsGot);
+        FinalScoreBK.SetActive(true);
+        FinishGameUI.GetComponent<TextMeshProUGUI>().text = "    GAME OVER!\r\nYOUR FINAL SCORE:\r\n         " + Mathf.Round(PointsGot);
+        StartCoroutine(FianlScoreDisappear(3.0f));
+    }
+
+    private IEnumerator FianlScoreDisappear(float time)
+    {
+        yield return new WaitForSeconds(time);
+        FinalScoreBK.SetActive(false);
     }
 
     private IEnumerator heartDisappear(Image heart, float time)

@@ -342,6 +342,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &795646424 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4974306376663128311, guid: 6b82a708e2331124996c206c3e659bcb,
+    type: 3}
+  m_PrefabInstance: {fileID: 3556692041305590524}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &807984479
 GameObject:
   m_ObjectHideFlags: 0
@@ -718,6 +724,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a41eddb5b75439249b6e9281d72dd573, type: 3}
+--- !u!1 &1575915860 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 464482287635455372, guid: 6b82a708e2331124996c206c3e659bcb,
+    type: 3}
+  m_PrefabInstance: {fileID: 3556692041305590524}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1663814102 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1866336654015461872, guid: 6b82a708e2331124996c206c3e659bcb,
@@ -1251,14 +1263,34 @@ PrefabInstance:
       objectReference: {fileID: 2102687635}
     - target: {fileID: 5026847230509056178, guid: d8129e963e529734ba5909306c15959a,
         type: 3}
+      propertyPath: RestButton
+      value: 
+      objectReference: {fileID: 1575915860}
+    - target: {fileID: 5026847230509056178, guid: d8129e963e529734ba5909306c15959a,
+        type: 3}
       propertyPath: PointsGotUI
       value: 
       objectReference: {fileID: 89256457}
     - target: {fileID: 5026847230509056178, guid: d8129e963e529734ba5909306c15959a,
         type: 3}
+      propertyPath: FinalScoreBK
+      value: 
+      objectReference: {fileID: 2033148953}
+    - target: {fileID: 5026847230509056178, guid: d8129e963e529734ba5909306c15959a,
+        type: 3}
       propertyPath: FinishGameUI
       value: 
       objectReference: {fileID: 2033148953}
+    - target: {fileID: 5026847230509056178, guid: d8129e963e529734ba5909306c15959a,
+        type: 3}
+      propertyPath: StartButton1
+      value: 
+      objectReference: {fileID: 795646424}
+    - target: {fileID: 5026847230509056178, guid: d8129e963e529734ba5909306c15959a,
+        type: 3}
+      propertyPath: StartButton2
+      value: 
+      objectReference: {fileID: 1575915860}
     - target: {fileID: 5026847230509056178, guid: d8129e963e529734ba5909306c15959a,
         type: 3}
       propertyPath: HeartsUI.Array.data[0]
@@ -1354,14 +1386,34 @@ PrefabInstance:
       objectReference: {fileID: 2102687635}
     - target: {fileID: 2377912090513671923, guid: f45d54c13f48a4b4ba179afa4bcff964,
         type: 3}
+      propertyPath: RestButton
+      value: 
+      objectReference: {fileID: 1575915860}
+    - target: {fileID: 2377912090513671923, guid: f45d54c13f48a4b4ba179afa4bcff964,
+        type: 3}
       propertyPath: PointsGotUI
       value: 
       objectReference: {fileID: 89256457}
     - target: {fileID: 2377912090513671923, guid: f45d54c13f48a4b4ba179afa4bcff964,
         type: 3}
+      propertyPath: FinalScoreBK
+      value: 
+      objectReference: {fileID: 2033148953}
+    - target: {fileID: 2377912090513671923, guid: f45d54c13f48a4b4ba179afa4bcff964,
+        type: 3}
       propertyPath: FinishGameUI
       value: 
       objectReference: {fileID: 2033148953}
+    - target: {fileID: 2377912090513671923, guid: f45d54c13f48a4b4ba179afa4bcff964,
+        type: 3}
+      propertyPath: StartButton1
+      value: 
+      objectReference: {fileID: 795646424}
+    - target: {fileID: 2377912090513671923, guid: f45d54c13f48a4b4ba179afa4bcff964,
+        type: 3}
+      propertyPath: StartButton2
+      value: 
+      objectReference: {fileID: 1575915860}
     - target: {fileID: 2377912090513671923, guid: f45d54c13f48a4b4ba179afa4bcff964,
         type: 3}
       propertyPath: HeartsUI.Array.data[0]
@@ -1387,6 +1439,26 @@ PrefabInstance:
       propertyPath: HeartsUI.Array.data[4]
       value: 
       objectReference: {fileID: 2134356811}
+    - target: {fileID: 2377912090513671923, guid: f45d54c13f48a4b4ba179afa4bcff964,
+        type: 3}
+      propertyPath: ObstacleMaterials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 56858fc2df6e39841932083dd601b1d3, type: 2}
+    - target: {fileID: 2377912090513671923, guid: f45d54c13f48a4b4ba179afa4bcff964,
+        type: 3}
+      propertyPath: ObstacleMaterials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5526fa5053e9b3b48802fdf828462e03, type: 2}
+    - target: {fileID: 2377912090513671923, guid: f45d54c13f48a4b4ba179afa4bcff964,
+        type: 3}
+      propertyPath: ObstacleMaterials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: 98b3ea261807aa64fad33c8dc153c10b, type: 2}
+    - target: {fileID: 2377912090513671923, guid: f45d54c13f48a4b4ba179afa4bcff964,
+        type: 3}
+      propertyPath: ObstacleMaterials.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: db53427710aa29d49b2f13c1e16a00bd, type: 2}
     - target: {fileID: 9221354559778489266, guid: f45d54c13f48a4b4ba179afa4bcff964,
         type: 3}
       propertyPath: m_Name

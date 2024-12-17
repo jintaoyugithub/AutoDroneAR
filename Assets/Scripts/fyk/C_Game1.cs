@@ -66,6 +66,14 @@ public class C_Game1 : MonoBehaviour
 
     private GameObject WallsParent;
 
+    public GameObject StartButton1;
+    public GameObject StartButton2;
+
+    public GameObject RestButton;
+    public GameObject FinalScoreBK;
+
+    private Vector3 DroneStartPosition;
+
     private void Awake()
     {
         if (Instance == null)
@@ -80,6 +88,7 @@ public class C_Game1 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        DroneStartPosition = Drone.transform.position;
         //WallsParent = new GameObject("Obstacle's parent");
         //WallsParent.transform.position = Vector3.zero;
     }
@@ -94,7 +103,7 @@ public class C_Game1 : MonoBehaviour
                 isStartGame = false;
             }
             PointsGot += Time.deltaTime * HardLevel;
-            PointsGotUI.GetComponent<TextMeshProUGUI>().text = "Points:" + Mathf.Round(PointsGot);
+            PointsGotUI.GetComponent<TextMeshProUGUI>().text = "Score:" + Mathf.Round(PointsGot);
             generateTimer -= Time.deltaTime;
             TimePassed += Time.deltaTime;
             if(TimePassed >= 20.0f && TimePassed < 40.0f)
@@ -227,6 +236,10 @@ public class C_Game1 : MonoBehaviour
             HeartsUI[i].gameObject.SetActive(true);
             HeartsUI[i].transform.localScale = Vector3.one;
         }
+        StartButton1.SetActive(false);
+        StartButton1.SetActive(false);
+        RestButton.SetActive(true);
+
         HeartIndex = 4;
         WallsParent = new GameObject("Obstacle's parent");
         WallsParent.transform.position = Vector3.zero;
@@ -421,8 +434,20 @@ public class C_Game1 : MonoBehaviour
         {
             HeartsUI[i].gameObject.SetActive(false);
         }
+        StartButton1.SetActive(true);
+        StartButton1.SetActive(true);
+        RestButton.SetActive(false);
+
         PointsGotUI.GetComponent<TextMeshProUGUI>().text = "";
-        FinishGameUI.GetComponent<TextMeshProUGUI>().text = "Points Got Last Time: " + Mathf.Round(PointsGot);
+        FinalScoreBK.SetActive(true);
+        FinishGameUI.GetComponent<TextMeshProUGUI>().text = "    GAME OVER!\r\nYOUR FINAL SCORE:\r\n         " + Mathf.Round(PointsGot);
+        StartCoroutine(FianlScoreDisappear(3.0f));
+    }
+
+    private IEnumerator FianlScoreDisappear(float time)
+    {
+        yield return new WaitForSeconds(time);
+        FinalScoreBK.SetActive(false);
     }
 
     private IEnumerator heartDisappear(Image heart, float time)
@@ -449,5 +474,10 @@ public class C_Game1 : MonoBehaviour
             yield return null;
         }
         this.transform.localScale = Vector3.one;
+    }
+
+    public void ResetDronePosition()
+    {
+        Drone.transform.position = DroneStartPosition + Drone.transform.forward * 1.0f;
     }
 }
