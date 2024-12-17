@@ -96,11 +96,11 @@ public class ExplodingProjectile : MonoBehaviour
                 isHitSomething = true;
                 if (hit.collider.transform.GetComponent<C_Enemy1>() != null)
                 {
-                    hit.collider.transform.GetComponent<C_Enemy1>().GetHurt(1);
+                    hit.collider.transform.GetComponent<C_Enemy1>().GetHurt(C_Game2.Instance.curDamage);
                 }
                 if(hit.collider.transform.GetComponent<C_Enemy2>() != null)
                 {
-                    hit.collider.transform.GetComponent<C_Enemy2>().GetHurt(1);
+                    hit.collider.transform.GetComponent<C_Enemy2>().GetHurt(C_Game2.Instance.curDamage);
                 }
             }
             if (hit.collider.gameObject.CompareTag("Player"))

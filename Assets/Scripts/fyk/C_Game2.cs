@@ -125,11 +125,15 @@ public class C_Game2 : MonoBehaviour
                         break;
                     case (3):
                         GenerateEnemy1(Drone, 4.0f);
+                        GenerateEnemy1(Drone, 4.0f);
                         break;
                     case (4):
                         GenerateEnemy1(Drone, 4.5f);
+                        GenerateEnemy1(Drone, 4.5f);
                         break;
                     case (5):
+                        GenerateEnemy1(Drone, 5.0f);
+                        GenerateEnemy1(Drone, 5.0f);
                         GenerateEnemy1(Drone, 5.0f);
                         break;
                 }
@@ -150,8 +154,10 @@ public class C_Game2 : MonoBehaviour
                         break;
                     case (4):
                         GenerateEnemy2(Drone, 3.0f, 1.5f);
+                        GenerateEnemy2(Drone, 3.0f, 1.5f);
                         break;
                     case (5):
+                        GenerateEnemy2(Drone, 3.0f, 1.0f);
                         GenerateEnemy2(Drone, 3.0f, 1.0f);
                         break;
                 }
