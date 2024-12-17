@@ -128,6 +128,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 3556692041305590524}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &412613878 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 464482287635455372, guid: 6b82a708e2331124996c206c3e659bcb,
+    type: 3}
+  m_PrefabInstance: {fileID: 3556692041305590524}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &566526789 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6721182413723816675, guid: 6b82a708e2331124996c206c3e659bcb,
@@ -742,6 +748,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4726f2c59a01b9e42b7c270c2048ae85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1873753839 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4974306376663128311, guid: 6b82a708e2331124996c206c3e659bcb,
+    type: 3}
+  m_PrefabInstance: {fileID: 3556692041305590524}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2033148953 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7219296211937201037, guid: 6b82a708e2331124996c206c3e659bcb,
@@ -1251,6 +1263,16 @@ PrefabInstance:
       objectReference: {fileID: 2102687635}
     - target: {fileID: 5026847230509056178, guid: d8129e963e529734ba5909306c15959a,
         type: 3}
+      propertyPath: StartGame1
+      value: 
+      objectReference: {fileID: 1873753839}
+    - target: {fileID: 5026847230509056178, guid: d8129e963e529734ba5909306c15959a,
+        type: 3}
+      propertyPath: StartGame2
+      value: 
+      objectReference: {fileID: 412613878}
+    - target: {fileID: 5026847230509056178, guid: d8129e963e529734ba5909306c15959a,
+        type: 3}
       propertyPath: PointsGotUI
       value: 
       objectReference: {fileID: 89256457}
@@ -1259,6 +1281,26 @@ PrefabInstance:
       propertyPath: FinishGameUI
       value: 
       objectReference: {fileID: 2033148953}
+    - target: {fileID: 5026847230509056178, guid: d8129e963e529734ba5909306c15959a,
+        type: 3}
+      propertyPath: generateRadiusMax
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5026847230509056178, guid: d8129e963e529734ba5909306c15959a,
+        type: 3}
+      propertyPath: generateRadiusMin
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5026847230509056178, guid: d8129e963e529734ba5909306c15959a,
+        type: 3}
+      propertyPath: ItemGenerateRadiusMax
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5026847230509056178, guid: d8129e963e529734ba5909306c15959a,
+        type: 3}
+      propertyPath: ItemGenerateRadiusMin
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5026847230509056178, guid: d8129e963e529734ba5909306c15959a,
         type: 3}
       propertyPath: HeartsUI.Array.data[0]
@@ -1352,6 +1394,16 @@ PrefabInstance:
       propertyPath: Drone
       value: 
       objectReference: {fileID: 2102687635}
+    - target: {fileID: 2377912090513671923, guid: f45d54c13f48a4b4ba179afa4bcff964,
+        type: 3}
+      propertyPath: StartGame1
+      value: 
+      objectReference: {fileID: 1873753839}
+    - target: {fileID: 2377912090513671923, guid: f45d54c13f48a4b4ba179afa4bcff964,
+        type: 3}
+      propertyPath: StartGame2
+      value: 
+      objectReference: {fileID: 412613878}
     - target: {fileID: 2377912090513671923, guid: f45d54c13f48a4b4ba179afa4bcff964,
         type: 3}
       propertyPath: PointsGotUI
