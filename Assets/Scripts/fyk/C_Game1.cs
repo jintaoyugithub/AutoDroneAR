@@ -409,6 +409,7 @@ public class C_Game1 : MonoBehaviour
             GameOver();
             return;
         }
+        AudioSource.PlayClipAtPoint(C_Game2.Instance.GetHit, Drone.transform.position);
         HeartIndex--;
     }
 
@@ -437,6 +438,8 @@ public class C_Game1 : MonoBehaviour
         StartButton1.SetActive(true);
         StartButton1.SetActive(true);
         RestButton.SetActive(false);
+
+        AudioSource.PlayClipAtPoint(C_Game2.Instance.GameOverSound, Drone.transform.position);
 
         PointsGotUI.GetComponent<TextMeshProUGUI>().text = "";
         FinalScoreBK.SetActive(true);

@@ -122,3 +122,4 @@ MonoBehaviour:
   floatSpeed: 1
   rotationSpeed: 50
   timeOffset: 0
+  GetImprovement: {fileID: 8300000, guid: 13867e8d76f37644a96f856ec59d6a00, type: 3}

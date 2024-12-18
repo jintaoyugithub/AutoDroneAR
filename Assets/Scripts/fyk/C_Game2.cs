@@ -63,6 +63,16 @@ public class C_Game2 : MonoBehaviour
     public GameObject RestButton;
     public GameObject FinalScoreBK;
 
+    public AudioClip FireSmall;
+    public AudioClip FireMedium;
+    public AudioClip FireLarge;
+
+    public AudioClip ClickButton;
+    public AudioClip GetHit;
+    public AudioClip GameOverSound;
+    public AudioClip DroneFly;
+    public AudioClip GetWaterShield;
+
     private void Awake()
     {
         if (Instance == null)
@@ -73,6 +83,7 @@ public class C_Game2 : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        //AudioSource.PlayClipAtPoint(DroneFly, this.transform.position);
     }
     void Start()
     {
@@ -171,6 +182,10 @@ public class C_Game2 : MonoBehaviour
 
         }
     }
+    public void PlayButtonSound()
+    {
+        AudioSource.PlayClipAtPoint(ClickButton, this.transform.position);
+    }
 
     public void StartGame()
     {
@@ -255,6 +270,7 @@ public class C_Game2 : MonoBehaviour
             GameOver();
             return;
         }
+        AudioSource.PlayClipAtPoint(GetHit, Drone.transform.position);
         //DroneBlood--;
         HeartIndex--;
     }
@@ -281,6 +297,8 @@ public class C_Game2 : MonoBehaviour
         //}
         Destroy(EnemyParent);
         Destroy(ItemParent);
+
+        AudioSource.PlayClipAtPoint(GameOverSound, Drone.transform.position);
 
         StartButton1.SetActive(true);
         StartButton1.SetActive(true);

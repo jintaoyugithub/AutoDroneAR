@@ -118,6 +118,7 @@ MonoBehaviour:
   floatSpeed: 1
   rotationSpeed: 50
   timeOffset: 0
+  GetHeart: {fileID: 8300000, guid: ed97bee5c63ec764b900d094bec5e1e5, type: 3}
 --- !u!65 &4277053702141431920
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -12,6 +12,7 @@ public class C_Improvement : MonoBehaviour
     public float rotationSpeed = 50f;
     public float timeOffset = 0f;
 
+    public AudioClip GetImprovement;
     void Start()
     {
         startPosition = transform.position;
@@ -42,6 +43,7 @@ public class C_Improvement : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
+            AudioSource.PlayClipAtPoint(GetImprovement, this.transform.position);
             C_Game2.Instance.Drone.GetComponent<C_Drone>().GetSkill();
             Destroy(gameObject);
         }

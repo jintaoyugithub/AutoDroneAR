@@ -101,6 +101,7 @@ MonoBehaviour:
   floatSpeed: 1
   rotationSpeed: 50
   timeOffset: 0
+  GetShield: {fileID: 8300000, guid: c2edab23ea8247249a652a182881c503, type: 3}
 --- !u!135 &8673815160440298279
 SphereCollider:
   m_ObjectHideFlags: 0

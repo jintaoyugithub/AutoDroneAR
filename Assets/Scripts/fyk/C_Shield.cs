@@ -12,6 +12,7 @@ public class C_Shield : MonoBehaviour
     public float rotationSpeed = 50f;
     public float timeOffset = 0f;
 
+    public AudioClip GetShield;
     void Start()
     {
         startPosition = transform.position;
@@ -32,6 +33,7 @@ public class C_Shield : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
+            AudioSource.PlayClipAtPoint(GetShield, this.transform.position);
             C_Game2.Instance.Drone.GetComponent<C_Drone>().getShield();
             Destroy(gameObject);
         }

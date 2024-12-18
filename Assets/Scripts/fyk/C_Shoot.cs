@@ -85,6 +85,13 @@ public class C_Shoot : MonoBehaviour
 
     public void Fire()
     {
+        switch (bombType) 
+        {
+            case (0): AudioSource.PlayClipAtPoint(C_Game2.Instance.FireSmall, this.transform.position, 0.5f); break;
+            case (1): AudioSource.PlayClipAtPoint(C_Game2.Instance.FireMedium, this.transform.position, 0.5f); break;
+            case (2): AudioSource.PlayClipAtPoint(C_Game2.Instance.FireLarge, this.transform.position, 0.5f); break;
+        }
+
         Instantiate(bombList[bombType].muzzleflare, spawnLocatorMuzzleFlare.position, spawnLocatorMuzzleFlare.rotation);
         //   bombList[bombType].muzzleflare.Play();
 

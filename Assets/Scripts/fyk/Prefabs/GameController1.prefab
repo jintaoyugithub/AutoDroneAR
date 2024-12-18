@@ -64,10 +64,10 @@ MonoBehaviour:
   ObstaclePrefab: {fileID: 2030289064470570666, guid: adc40620456e99747a6555ec2b2045c7,
     type: 3}
   ObstacleMaterials:
-  - {fileID: 2100000, guid: 70e5eda68ab534a87b26f7e79fba63e6, type: 2}
-  - {fileID: 2100000, guid: d5e84b7f96b644a72b7df2c43c3200f5, type: 2}
-  - {fileID: 2100000, guid: 28ba334487c744c7783e2d715a50da06, type: 2}
-  - {fileID: 2100000, guid: cb4f46638db2cc943a8afe7cd1f31fe6, type: 2}
+  - {fileID: 2100000, guid: 56858fc2df6e39841932083dd601b1d3, type: 2}
+  - {fileID: 2100000, guid: 5526fa5053e9b3b48802fdf828462e03, type: 2}
+  - {fileID: 2100000, guid: 98b3ea261807aa64fad33c8dc153c10b, type: 2}
+  - {fileID: 2100000, guid: db53427710aa29d49b2f13c1e16a00bd, type: 2}
   - {fileID: 2100000, guid: 5d7f785ebc7b16a489f15f865f6bbc13, type: 2}
   HeartsUI:
   - {fileID: 0}
@@ -79,3 +79,7 @@ MonoBehaviour:
   FinishGameUI: {fileID: 0}
   Shield: {fileID: 1977203340976831440, guid: ea7445ffb944058449ca8839d021f6a6, type: 3}
   ShieldGold: {fileID: 0}
+  StartButton1: {fileID: 0}
+  StartButton2: {fileID: 0}
+  RestButton: {fileID: 0}
+  FinalScoreBK: {fileID: 0}

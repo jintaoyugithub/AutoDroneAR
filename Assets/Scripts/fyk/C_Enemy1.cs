@@ -11,6 +11,8 @@ public class C_Enemy1 : MonoBehaviour
     private Rigidbody drone;
 
     public int blood = 3;
+
+    public AudioClip Explosion;
     void Start()
     {
         drone = GetComponent<Rigidbody>();
@@ -44,6 +46,8 @@ public class C_Enemy1 : MonoBehaviour
     {
         if(blood - hurtValue <= 0)
         {
+            AudioSource.PlayClipAtPoint(Explosion, this.transform.position);
+
             Destroy(this.gameObject);
         }
         else

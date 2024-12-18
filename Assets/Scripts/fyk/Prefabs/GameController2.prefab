@@ -76,3 +76,15 @@ MonoBehaviour:
   ItemGenerateRadiusMin: 5
   ItemGenerateRadiusMax: 10
   ItemGenerateDuration: 10
+  StartButton1: {fileID: 0}
+  StartButton2: {fileID: 0}
+  RestButton: {fileID: 0}
+  FinalScoreBK: {fileID: 0}
+  FireSmall: {fileID: 8300000, guid: cabacfbf8f6bbd747bb0bd3287628a33, type: 3}
+  FireMedium: {fileID: 8300000, guid: c8fe8e9688fa26848aa5f33b345e2529, type: 3}
+  FireLarge: {fileID: 8300000, guid: 92aef5f04465bc748ab66caf69050157, type: 3}
+  ClickButton: {fileID: 8300000, guid: cd2b532254bdb1a4bb724c9be989de50, type: 3}
+  GetHit: {fileID: 8300000, guid: 79cb00811862aa34f961a0a9468fee1b, type: 3}
+  GameOverSound: {fileID: 8300000, guid: c8452554fd73ac747a155cc19ffdcf4c, type: 3}
+  DroneFly: {fileID: 8300000, guid: 67c905bd7e6873b4dbad2209957a1fc5, type: 3}
+  GetWaterShield: {fileID: 8300000, guid: 0eabfb8eb01f3534599dc943c13c7168, type: 3}

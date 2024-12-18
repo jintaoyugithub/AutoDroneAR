@@ -21,6 +21,7 @@ public class C_Drone : MonoBehaviour
     public Transform NearestEnemy;
 
     private int getImproveTimes = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -70,6 +71,7 @@ public class C_Drone : MonoBehaviour
         if (collision.gameObject.CompareTag("Obstacle") && !onProtected)
         {
             C_Game1.Instance.GetHurt();
+            AudioSource.PlayClipAtPoint(C_Game2.Instance.GetWaterShield, this.transform.position);
             StartCoroutine(getHurt(1.0f));
         }
     }

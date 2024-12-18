@@ -12,6 +12,7 @@ public class C_Heart : MonoBehaviour
     public float rotationSpeed = 50f;
     public float timeOffset = 0f;
 
+    public AudioClip GetHeart;
     void Start()
     {
         startPosition = transform.position;
@@ -32,6 +33,7 @@ public class C_Heart : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
+            AudioSource.PlayClipAtPoint(GetHeart, this.transform.position);
             C_Game2.Instance.GetHeart();
             Destroy(gameObject);
         }

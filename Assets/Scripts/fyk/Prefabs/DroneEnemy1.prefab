@@ -10366,6 +10366,7 @@ MonoBehaviour:
   speed: 5
   Player: {fileID: 0}
   blood: 3
+  Explosion: {fileID: 8300000, guid: f291322f5caa63049b57c541501d0fa2, type: 3}
 --- !u!65 &6841198563207287619
 BoxCollider:
   m_ObjectHideFlags: 0

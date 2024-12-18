@@ -20,6 +20,8 @@ public class C_Enemy2 : MonoBehaviour
     private Rigidbody drone;
 
     public int blood = 5;
+
+    public AudioClip Explosion;
     // Start is called before the first frame update
     void Start()
     {
@@ -67,6 +69,8 @@ public class C_Enemy2 : MonoBehaviour
         
         if (blood - hurtValue <= 0)
         {
+            AudioSource.PlayClipAtPoint(Explosion, this.transform.position);
+
             Destroy(this.gameObject);
         }
         else
