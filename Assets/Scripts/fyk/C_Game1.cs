@@ -237,7 +237,7 @@ public class C_Game1 : MonoBehaviour
             HeartsUI[i].transform.localScale = Vector3.one;
         }
         StartButton1.SetActive(false);
-        StartButton1.SetActive(false);
+        StartButton2.SetActive(false);
         RestButton.SetActive(true);
 
         HeartIndex = 4;
@@ -436,7 +436,7 @@ public class C_Game1 : MonoBehaviour
             HeartsUI[i].gameObject.SetActive(false);
         }
         StartButton1.SetActive(true);
-        StartButton1.SetActive(true);
+        StartButton2.SetActive(true);
         RestButton.SetActive(false);
 
         AudioSource.PlayClipAtPoint(C_Game2.Instance.GameOverSound, Drone.transform.position);
